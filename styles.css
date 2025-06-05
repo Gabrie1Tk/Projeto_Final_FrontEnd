@@ -1,0 +1,417 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e40af;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.logo h1 {
+    margin-right: 10px;
+}
+
+/* Menu de navegação */
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Seções principais */
+main {
+    min-height: 70vh;
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.divisor {
+    width: 80px;
+    height: 4px;
+    background-color: #f97316;
+    margin: 0 auto;
+}
+
+/* Banner principal */
+.banner {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background-color: #1e40af;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-conteudo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner-texto {
+    width: 100%;
+    max-width: 50%;
+    color: white;
+    padding: 20px;
+    z-index: 10;
+}
+
+.banner-texto h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.banner-texto p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.image-placeholder {
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+}
+
+.percurso {
+    height: 400px;
+    width: 300px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f97316;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background-color: #1e40af;
+}
+
+/* Sobre a empresa */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #4b5563;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+/* Cards de produtos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-image {
+    height: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.product-info p {
+    color: #4b5563;
+    margin-bottom: 15px;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Seção de novidades */
+.news-section {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.news-text {
+    width: 100%;
+    max-width: 40%;
+}
+
+.news-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.news-text ul{
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.news-image {
+    width: 100%;
+    max-width: 55%;
+}
+
+.news-image-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+/* Formulários */
+
+/* Rodapé */
+footer {
+    background-color: #111827;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    gap: 32px;
+}
+
+.footer-section {
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    margin: 0 auto 24px;
+    max-width: 70%; 
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+}
+
+.developer-info {
+    font-size: 15px;
+    width: 100%;
+}
+
+/* Estilos para a página de corridas */
+.race-calendar {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.race-item {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.race-item:last-child {
+    border-bottom: none;
+}
+
+.race-date {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.race-name {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Estilos para a página Quem Somos */
+.contact-info {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: #1e3a8a;
+}
+
+/* Estilos para a página Trabalhe Conosco */
+.job-benefits {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.benefit-item i {
+    margin-right: 10px;
+    color: #f97316;
+}
+
+/* Utilitários */
+.text-center {
+    text-align: center;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.tamanho{
+    width: 100%;
+    height: auto;
+}
+
+.texto_tam {
+  font-size: 18px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.destaque{
+    color: #1e3a8a; 
+    margin-bottom: 15px;
+}
